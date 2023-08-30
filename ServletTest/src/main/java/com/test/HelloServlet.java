@@ -12,11 +12,25 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloServlet
  */
-@WebServlet("/hello")
+//@WebServlet("/hello")
+@WebServlet(urlPatterns = {"/hello", "/world"})
+
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
+    @Override
+	public void destroy() {
+		super.destroy();
+		System.out.println("파괴 되었습니다.");
+	}
+
+	@Override
+	public void init() throws ServletException {
+		super.init();
+		System.out.println("초기화 되었습니다 ");
+	}
+
+	/**
      * @see HttpServlet#HttpServlet()
      */
     public HelloServlet() {
