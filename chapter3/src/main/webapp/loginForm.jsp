@@ -39,7 +39,7 @@
  	 	<h1>
  	 		<i class="fa-solid fa-rigth-to-bracket"></i>로그인
  	 	</h1>
-		<form action= "login" method= "post" class="form">
+		<form action="login" method="post" class="form">
 			<div class="form-group">
 				<label for="userid">아이디</label> 
 				<input type="text" name="userid">

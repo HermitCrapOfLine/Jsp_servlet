@@ -11,3 +11,16 @@
 	<p>그러게용.</p>
 </body>
 </html>
+
+	<servlet>
+		<servlet-name>helloServlet</servlet-name>
+			<servlet-class>com.test.helloServlet</servlet-class>
+			<init-param>
+			   <param-name>dirPath</param-name>
+			   <param-value>c:\\test</param-value>
+			</init-param>
+	</servlet>
+			<servlet-mapping>
+						<servlet-name>helloServlet</servlet-name>
+						<url-pattern>/world</url-pattern>
+			</servlet-mapping>

@@ -40,26 +40,25 @@
     <div class="container">
 		<h1>
 			<i class="fa-solid fa-plane-departure"></i>관광지 등록</h1>
-		<form action="" method="post" class="form mt-5">
-			<div class="form-group">
-				<label>제목</label>
-				<input type="text" name="title" class="form-control">
-			</div>
+		<form action="travel_add" method="post" class="form mt-5">
 			<div class="form-group">
 				<label>권역</label>
-				<select name="reagion" class="form-control" style="width: 200px">
+				<select name="region" class="form-control" style="width: 200px">
 					<option value="수도권">수도권</option>
 					<option value="강원권">강원권</option>
 					<option value="경상권">경상권</option>
 					<option value="충청권">충청권</option>
 					<option value="전라권">전라권</option>
 					<option value="제주권">제주권</option>
-					
 				</select>
 			</div>
 			<div class="form-group">
+				<label>제목</label>
+				<input type="text" name="title" class="form-control">
+			</div>
+			<div class="form-group">
 				<label>주소</label>
-				<input type="text" name="phone" class="form-control">
+				<input type="text" name="address" class="form-control">
 			</div>
 			<div class="form-group">
 				<label>전화번호</label>
@@ -67,7 +66,7 @@
 			</div>
 			<div class="form-group">
 				<label>내용</label>
-				<textarea type="textarea" row="8" class="form-control"></textarea>
+				<textarea type="textarea" row="8" name="description" class="form-control"></textarea>
 			</div>
 			
 			<div>
