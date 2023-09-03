@@ -27,6 +27,7 @@
     <Manager pathname="" />
     -->
     
+  	<!--데이터 베이스 연결 내용  -->
     <Resource 
 		auth="Container" 
 		driverClassName="com.mysql.cj.jdbc.Driver"
